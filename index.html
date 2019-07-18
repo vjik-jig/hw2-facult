@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Do U Smoke?</title>
+  </head>
+  <body>
+    <script>
+      var name = prompt("Как тебя зовут?", "Вася");
+      var age = prompt("Сколько тебе полных лет?", 18);
+      var smokeCheck = confirm("Куришь?");
+      age = +age;
+      age < 18 && !smokeCheck
+        ? alert(name + ", Так держать!")
+        : age < 18 && smokeCheck
+        ? alert(name + ", Я Маме расскажу!")
+        : age >= 18 && !smokeCheck
+        ? alert(name + ", Молодец, и не надо!")
+        : alert(name + ", Ну и зря!");
+    </script>
+  </body>
+</html>
